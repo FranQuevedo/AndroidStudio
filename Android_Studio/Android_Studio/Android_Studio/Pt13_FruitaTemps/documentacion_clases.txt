@@ -1,0 +1,44 @@
+DOCUMENTACIÓN DE CLASES - FRUIT NINJA DAM (Pt13_FruitaTemps)
+
+A continuación se explica la función de cada clase del proyecto:
+
+--- CLASES DE ANDROID (ENTRY POINTS) ---
+
+1. MainActivity.java:
+   - Es el punto de entrada principal de la aplicación Android. 
+   - Muestra una pantalla inicial con el título del juego y un botón para iniciar la actividad del juego.
+
+2. GameLauncher.java:
+   - Clase que hereda de 'AndroidApplication' (LibGDX).
+   - Se encarga de inicializar el motor de juego LibGDX y configurar el modo inmersivo en dispositivos Android.
+
+--- CLASES DEL MOTOR DE JUEGO (LibGDX) ---
+
+3. FruitesDelTemps.java:
+   - Es la clase núcleo del juego (extiende 'Game').
+   - Gestiona el 'AssetManager' para cargar imágenes y sonidos, y el 'SpriteBatch' para el renderizado.
+   - Controla el cambio entre las diferentes pantallas (Splash -> Menu -> Game).
+
+4. FruitActor.java:
+   - Representa cada objeto que aparece en pantalla (frutas y bombas).
+   - Gestiona su propia física (gravedad, velocidad), tamaño normalizado (escalado) y detecta si el usuario ha hecho clic sobre él.
+
+5. SplashScreen.java:
+   - Pantalla de carga inicial.
+   - Muestra el texto "Fruit Ninja DAM" en color negro sobre un fondo blanco durante unos segundos antes de pasar al menú.
+
+6. MenuScreen.java:
+   - Pantalla del menú principal.
+   - Contiene el botón "COMENÇAR PARTIDA" y el fondo del juego. Prepara el entorno para empezar a jugar.
+
+7. GameScreen.java:
+   - Es la clase principal de la lógica de juego.
+   - Controla la aparición aleatoria (spawn) de frutas y bombas.
+   - Gestiona el sistema de puntuación, las vidas del jugador y la dificultad progresiva.
+   - Dibuja la interfaz de usuario (UI) con los puntos y vidas restantes.
+
+--- OTRAS CLASES (UTILIDADES Y PUBLICIDAD) ---
+
+8. NetworkUtils.java, BannerActivity.java e InterstitialActivity.java:
+   - Clases que originalmente estaban destinadas a la gestión de red y anuncios (AdMob).
+   - Actualmente sirven como placeholders o están simplificadas tras la limpieza de referencias publicitarias.

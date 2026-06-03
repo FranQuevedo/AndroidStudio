@@ -18,7 +18,13 @@ public class FruitActor extends Actor {
     public FruitActor(Texture texture, boolean isBomb, float x) {
         this.texture = texture;
         this.isBomb = isBomb;
-        setSize(texture.getWidth(), texture.getHeight());
+
+        // Normalitzem la mida per a que totes les fruites (inclosa la maduixa) tinguin una mida similar
+        // Definim una amplada objectiu i calculem l'alçada mantenint la proporció
+        float targetWidth = 250f;
+        float aspectRatio = (float) texture.getHeight() / texture.getWidth();
+        setSize(targetWidth, targetWidth * aspectRatio);
+
         setPosition(x, -getHeight()); // Apareixen des de sota
         
         // Velocitat inicial cap amunt aleatòria
