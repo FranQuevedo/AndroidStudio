@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "430134893222",
+    "project_id": "practicanotificacionesquevedo_Francisco",
+    "storage_bucket": "practicanotificacionesquevedo_Francisco.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430134893222:android:be893c398ec1142e30f267",
+        "android_client_info": {
+          "package_name": "net.vidalibarraquer.profe.notificacions"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUxumj3-h4Ez9EEFP2poXykVPNPbrWib4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
